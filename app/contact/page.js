@@ -47,6 +47,12 @@ export default function ContactPage() {
                   0000-0002-7901-9833
                 </a>
               </li>
+              <li>
+                LinkedIn:{' '}
+                <a href="https://www.linkedin.com/in/stefaniembader/" target="_blank" rel="noreferrer">
+                  stefaniembader
+                </a>
+              </li>
             </ul>
           </article>
         </div>
