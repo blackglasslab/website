@@ -23,7 +23,7 @@ export default function JoinPage() {
           <article className="position-card">
             <strong>Postdoctoral researchers</strong>
             <p>
-              Candidates with strong backgrounds in immunology, infection biology, cell biology, or related quantitative approaches are welcome to enquire.
+              Candidates with strong backgrounds in immunology, infection biology, cell biology, or related quantitative approaches are welcome to enquire. Informatic or computational skills are highly desirable.
             </p>
           </article>
           <article className="position-card">

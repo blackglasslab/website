@@ -16,7 +16,11 @@ export default function ContactPage() {
         <div className="contact-layout">
           <article className="contact-card">
             <strong>Bader Lab</strong>
-            <p>Center for Integrative Infectious Disease Research (CIID)</p>
+            <p>
+              <a href="https://ciid-heidelberg.de" target="_blank" rel="noreferrer">
+                Center for Integrative Infectious Disease Research (CIID)
+              </a>
+            </p>
             <p>Im Neuenheimer Feld 344</p>
             <p>69120 Heidelberg, Germany</p>
             <p>
