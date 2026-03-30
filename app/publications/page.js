@@ -21,7 +21,11 @@ export default function PublicationsPage() {
               <strong>{group.year}</strong>
               <ul className="inline-list">
                 {group.items.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item.url}>
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      {item.citation}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </article>

@@ -21,21 +21,41 @@ export const publicationGroups = [
   {
     year: '2025',
     items: [
-      'Bader S, et al. Placeholder title for a recent paper on infection-driven tissue injury. Journal Name. 2025.',
-      'Bader S, et al. Placeholder title for work on innate immune pathways in disease. Journal Name. 2025.',
+      {
+        citation:
+          'Bader SM, et al.; Pellegrini M; Doerflinger M. Non-apoptotic caspase-8 is critical for orchestrating exaggerated inflammation during severe SARS-CoV-2 infection. Nature Communications. 2025.',
+        url: 'https://www.nature.com/articles/s41467-025-56967-6',
+      },
+      {
+        citation:
+          'Bader SM, Calleja DJ, Devine SM, et al.; Komander D. A novel PLpro inhibitor improves outcomes in a pre-clinical model of long COVID. Nature Communications. 2025.',
+        url: 'https://www.nature.com/articles/s41467-025-58156-z',
+      },
+      {
+        citation:
+          'Bader SM, et al.; Pellegrini M; Doerflinger M. IL-1β drives SARS-CoV-2-induced disease independently of the inflammasome and pyroptosis signalling. Cell Death & Differentiation. 2025.',
+        url: 'https://link.springer.com/article/10.1038/s41418-025-01537-9',
+      },
     ],
   },
   {
     year: '2024',
     items: [
-      'Bader S, et al. Placeholder title for a study on post-acute infection biology. Journal Name. 2024.',
-      'Bader S, et al. Placeholder title for translational infection models. Journal Name. 2024.',
+      {
+        citation:
+          'Bader SM, et al. Necroptosis does not drive disease pathogenesis in a mouse infective model of SARS-CoV-2 in vivo. Cell Death & Disease. 2024.',
+        url: 'https://www.nature.com/articles/s41419-024-06417-1',
+      },
     ],
   },
   {
-    year: 'Selected earlier work',
+    year: '2023',
     items: [
-      'Selected publications can be added here as curated highlights or grouped by topic.',
+      {
+        citation:
+          'Bader SM, et al.; Pellegrini M. SARS-CoV-2 mouse adaptation selects virulence mutations that cause TNF-driven age-dependent severe disease with human correlates. Proceedings of the National Academy of Sciences. 2023.',
+        url: 'https://www.pnas.org/doi/10.1073/pnas.2301689120',
+      },
     ],
   },
 ];
