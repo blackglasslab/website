@@ -33,10 +33,6 @@ export default function TeamPage() {
             <p>
               The team is developing a research program at the intersection of infection, tissue biology, and innate immune mechanisms with translational relevance.
             </p>
-            <strong>Team growth</strong>
-            <p>
-              Additional team members, trainees, and collaborators can be added here as the lab expands. See the <a href="/join">Join page</a> for current opportunities and contact details.
-            </p>
           </article>
         </div>
       </div>

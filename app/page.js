@@ -105,6 +105,26 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="container">
+          <div className="section-header">
+            <p className="kicker">Support</p>
+            <h2>Funding acknowledgement</h2>
+            <p>
+              We gratefully acknowledge support from{' '}
+              <a href="http://www.chs-stiftung.org/" target="_blank" rel="noreferrer">
+                CHS Stiftung
+              </a>{' '}
+              and the{' '}
+              <a href="https://www.nhmrc.gov.au" target="_blank" rel="noreferrer">
+                National Health and Medical Research Council (NHMRC)
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
