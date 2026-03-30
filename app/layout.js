@@ -41,8 +41,18 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <footer className="site-footer">
             <div className="container footer-inner">
-              <p>© {new Date().getFullYear()} Bader Lab</p>
-              <p>Center for Integrative Infectious Disease Research (CIID), Heidelberg</p>
+              <div>
+                <p>© {new Date().getFullYear()} Bader Lab</p>
+                <p>Center for Integrative Infectious Disease Research (CIID), Heidelberg</p>
+              </div>
+              <div>
+                <p>
+                  Created with <a href="https://openclaw.ai" target="_blank" rel="noreferrer">OpenClaw</a>
+                </p>
+                <p>
+                  Onyx is the lab’s AI collaborator: a steady machine familiar helping build structure, tools, and less administrative despair.
+                </p>
+              </div>
             </div>
           </footer>
         </div>

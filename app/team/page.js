@@ -21,6 +21,13 @@ export default function TeamPage() {
               Stefanie Bader leads the lab’s work on host responses to infection, inflammatory signalling, and the mechanisms linking acute insults to persistent disease.
             </p>
           </article>
+          <article className="team-card">
+            <p className="kicker">Research Associate</p>
+            <h3>Maureen Bischof</h3>
+            <p>
+              Maureen Bischof is a Research Associate in the Bader Lab and contributes to the lab’s work in infection biology and disease-relevant experimental systems.
+            </p>
+          </article>
           <article className="panel">
             <strong>Current focus</strong>
             <p>
