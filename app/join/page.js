@@ -10,7 +10,7 @@ export default function JoinPage() {
           <p className="kicker">Join</p>
           <h2>Interested in working with us?</h2>
           <p>
-            The lab welcomes interest from motivated students, postdocs, and collaborators excited by infection biology, innate immunity, and disease-relevant mechanistic research.
+            The lab welcomes interest from motivated students, postdocs, and collaborators excited by infection biology, innate immunity, and disease-relevant mechanistic research. Interested applicants and collaborators are encouraged to contact <a href="mailto:stefanie@baderlab.de">stefanie@baderlab.de</a>.
           </p>
         </div>
         <div className="card-grid">

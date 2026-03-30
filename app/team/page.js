@@ -35,7 +35,7 @@ export default function TeamPage() {
             </p>
             <strong>Team growth</strong>
             <p>
-              Additional team members, trainees, and collaborators can be added here as the lab expands.
+              Additional team members, trainees, and collaborators can be added here as the lab expands. See the <a href="/join">Join page</a> for current opportunities and contact details.
             </p>
           </article>
         </div>
