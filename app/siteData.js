@@ -21,41 +21,47 @@ export const publicationGroups = [
   {
     year: '2025',
     items: [
-      {
-        citation:
-          'Bader SM, et al.; Pellegrini M; Doerflinger M. Non-apoptotic caspase-8 is critical for orchestrating exaggerated inflammation during severe SARS-CoV-2 infection. Nature Communications. 2025.',
-        url: 'https://www.nature.com/articles/s41467-025-56967-6',
-      },
-      {
-        citation:
-          'Bader SM, Calleja DJ, Devine SM, et al.; Komander D. A novel PLpro inhibitor improves outcomes in a pre-clinical model of long COVID. Nature Communications. 2025.',
-        url: 'https://www.nature.com/articles/s41467-025-58156-z',
-      },
-      {
-        citation:
-          'Bader SM, et al.; Pellegrini M; Doerflinger M. IL-1β drives SARS-CoV-2-induced disease independently of the inflammasome and pyroptosis signalling. Cell Death & Differentiation. 2025.',
-        url: 'https://link.springer.com/article/10.1038/s41418-025-01537-9',
-      },
+      'S. M. Bader#, ..., M. Pellegrini# and M. Doerflinger#, “Non-apoptotic caspase-8 is critical for orchestrating exaggerated inflammation during severe SARS-CoV-2 infection” Nat. Comms., 2025. #Co-corresponding.',
+      'S. M. Bader#, Calleja D#, Devine S# ..., D. Komander, “A novel PLpro inhibitor improves outcomes in a pre-clinical model of long COVID”, Nature Comms., 2025. #Shared first.',
+      'S. M. Bader, ..., M. Pellegrini and M. Doerflinger, “IL-1 drives SARS-CoV-2 disease, independently of the inflammasome and pyroptotic signalling”, Cell Death Differ., 2025.',
+      'J.P. Cooney, …, S.M. Bader, …, M. Pellegrini, “Combination antiretroviral therapy and MCL-1 inhibition mitigate HTLV-1 infection in vivo” Cell (accepted), 2025.',
     ],
   },
   {
     year: '2024',
     items: [
-      {
-        citation:
-          'Bader SM, et al. Necroptosis does not drive disease pathogenesis in a mouse infective model of SARS-CoV-2 in vivo. Cell Death & Disease. 2024.',
-        url: 'https://www.nature.com/articles/s41419-024-06417-1',
-      },
+      'S. M. Bader, ..., M. Doerflinger, “Necroptosis does not drive disease pathogenesis in a mouse infective model of SARS-CoV-2 in vivo”, Cell Death Dis., 2024.',
     ],
   },
   {
     year: '2023',
     items: [
-      {
-        citation:
-          'Bader SM, et al.; Pellegrini M. SARS-CoV-2 mouse adaptation selects virulence mutations that cause TNF-driven age-dependent severe disease with human correlates. Proceedings of the National Academy of Sciences. 2023.',
-        url: 'https://www.pnas.org/doi/10.1073/pnas.2301689120',
-      },
+      'S. M. Bader#, ..., M. Pellegrini, “SARS-CoV-2 mouse adaptation selects virulence mutations that cause TNF driven age-dependent severe disease with human correlates”, PNAS, 2023. #Shared first.',
+      'A. John#, S. M. Bader#, ..., E. D. Goddard-Borger, “Conservation, abundance, glycosylation profile, and localization of the TSP protein family in Cryptosporidium parvum”, JBC, 2023. #Shared lead authorship.',
+    ],
+  },
+  {
+    year: '2022',
+    items: [
+      'S. M. Bader, ..., A. L. Samson, “Endothelial Caspase-8 prevents fatal necroptotic hemorrhage caused by commensal bacteria”, Cell Death Differ., 2022.',
+      'S. M. Bader, ..., M. Doerflinger, “Programmed cell death: the pathways to severe COVID-19?”, Biochem J., 2022.',
+      'S. P Preston, ..., S. M. Bader, ..., Marc Pellegrini, “A necroptosis-independent function of RIPK3 promotes immune dysfunction and prevents control of chronic LCMV infection”, Cell Death Dis., 2022.',
+      'S. P Preston, ..., S. M. Bader, ..., Marc Pellegrini, “Epigenetic Silencing of RIPK3 in Hepatocytes Prevents MLKL-mediated Necroptosis from Contributing to Liver Pathologies”, Gastroenterology, 2022.',
+      'S. Seizova, ..., S. M. Bader, ..., C. J. Tonkin, “Transcriptional modification of host cells harbouring Toxoplasma gondii bradyzoites prevents IFN gamma-mediated cell death”, Cell Host Microbe, 2022.',
+      'Renz, A., … S. M. Bader, … Michael Schindler and Christoph Kaleta. “Metabolic Modeling Elucidates Phenformin and Atpenin A5 as Broad-Spectrum Antiviral Drugs”, Preprints, 2022.',
+    ],
+  },
+  {
+    year: '2021',
+    items: [
+      'M. D. Stutz, ..., S. M. Bader, ..., M. Pellegrini, “Macrophage and neutrophil death programs differentially confer resistance to tuberculosis”, Immunity, 2021.',
+      'A. D. Uboldi, M.L. Wilde, S. M. Bader, and C.J. Tonkin, “Environmental Sensing and Regulation of Motility in Toxoplasma”, Mol. Microbiol., 2021.',
+    ],
+  },
+  {
+    year: '2020',
+    items: [
+      'M. Doerflinger, ..., S. M. Bader, ..., M. J. Herold, “Flexible usage and interconnectivity of diverse cell death pathways protect against intracellular infection,” Immunity, 2020.',
     ],
   },
 ];
