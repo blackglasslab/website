@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const pillars = [
@@ -122,6 +123,17 @@ export default function HomePage() {
               </a>
               .
             </p>
+          </div>
+          <div className="funding-logo-row">
+            <a href="http://www.chs-stiftung.org/" target="_blank" rel="noreferrer" className="funding-logo-card">
+              <Image
+                src="/chs-logo.jpg"
+                alt="Chica and Heinz Schaller Foundation logo"
+                width={458}
+                height={161}
+                className="funding-logo"
+              />
+            </a>
           </div>
         </div>
       </section>

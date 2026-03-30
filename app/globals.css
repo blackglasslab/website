@@ -289,6 +289,27 @@ p {
   border: 1px solid var(--line);
 }
 
+.funding-logo-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.funding-logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.funding-logo {
+  width: min(100%, 320px);
+  height: auto;
+}
+
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--line);
