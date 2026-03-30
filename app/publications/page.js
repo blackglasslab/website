@@ -1,4 +1,4 @@
-import { publicationGroups } from '../siteData';
+import { publications } from '../siteData';
 
 export const metadata = {
   title: 'Publications | Bader Lab',
@@ -12,18 +12,22 @@ export default function PublicationsPage() {
           <p className="kicker">Publications</p>
           <h2>Selected work</h2>
           <p>
-            This page is structured for public-facing publications and can be updated with complete citations, links, and preprints as needed.
+            Publications are listed in reverse chronological order. Where exact, public citation metadata was readily verifiable, the entries below have been expanded to full citations.
           </p>
         </div>
-        <div className="publications-grid">
-          {publicationGroups.map((group) => (
-            <article key={group.year} className="publication-card">
-              <strong>{group.year}</strong>
-              <ul className="inline-list">
-                {group.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+
+        <div className="publications-list" role="list">
+          {publications.map((publication, index) => (
+            <article key={`${publication.year}-${index}`} className="publication-list-item" role="listitem">
+              <div className="publication-year">{publication.year}</div>
+              <div className="publication-content">
+                <p>{publication.citation}</p>
+                {publication.doi ? (
+                  <a href={publication.doi} target="_blank" rel="noreferrer" className="publication-link">
+                    DOI
+                  </a>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>
