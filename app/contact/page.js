@@ -27,6 +27,10 @@ export default function ContactPage() {
               Email:{' '}
               <a href="mailto:stefanie.bader@uni-heidelberg.de">stefanie.bader@uni-heidelberg.de</a>
             </p>
+            <p>
+              Lab email:{' '}
+              <a href="mailto:stefanie@baderlab.de">stefanie@baderlab.de</a>
+            </p>
           </article>
           <article className="contact-card">
             <strong>Profiles</strong>
