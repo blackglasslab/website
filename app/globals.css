@@ -2,14 +2,17 @@
   --bg: #f5f7fb;
   --surface: #ffffff;
   --surface-soft: #eef3f8;
+  --surface-deep: #e4edf7;
   --text: #102033;
   --muted: #5d6b7d;
   --line: #dbe4ee;
   --accent: #214c7a;
+  --accent-2: #3f6fa6;
   --accent-soft: #dce8f4;
   --max-width: 1120px;
   --radius: 20px;
   --shadow: 0 18px 45px rgba(16, 32, 51, 0.08);
+  --shadow-soft: 0 10px 30px rgba(16, 32, 51, 0.06);
 }
 
 * {
@@ -22,8 +25,10 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(63, 111, 166, 0.12), transparent 32%),
+    linear-gradient(180deg, #fbfdff 0%, var(--bg) 48%, #eef3f8 100%);
   color: var(--text);
 }
 
@@ -47,8 +52,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(12px);
-  background: rgba(248, 251, 255, 0.84);
+  backdrop-filter: blur(14px);
+  background: rgba(251, 253, 255, 0.78);
   border-bottom: 1px solid rgba(219, 228, 238, 0.7);
 }
 
@@ -102,7 +107,7 @@ a {
 }
 
 section {
-  padding: 4.5rem 0;
+  padding: 5.5rem 0;
 }
 
 .hero {
@@ -123,10 +128,25 @@ section {
 }
 
 .hero-card {
-  padding: 3rem;
+  padding: 3.4rem;
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 2rem;
+  grid-template-columns: 1.5fr 0.85fr;
+  gap: 2.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 18%, rgba(63, 111, 166, 0.18), transparent 26%);
+  pointer-events: none;
+}
+
+.hero-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .eyebrow {
@@ -144,7 +164,8 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  font-family: var(--font-display), var(--font-body), sans-serif;
 }
 
 h1 {
@@ -160,8 +181,9 @@ h2 {
 
 p {
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.75;
   margin: 0;
+  font-size: 1.02rem;
 }
 
 .lead {
@@ -201,7 +223,7 @@ p {
 .card-grid,
 .publications-grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.4rem;
 }
 
 .research-grid {
@@ -266,7 +288,27 @@ p {
 .position-card,
 .team-card,
 .panel {
-  padding: 1.5rem;
+  padding: 1.65rem;
+}
+
+.panel,
+.highlight-card,
+.publication-card,
+.contact-card,
+.position-card,
+.team-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.panel:hover,
+.highlight-card:hover,
+.publication-card:hover,
+.contact-card:hover,
+.position-card:hover,
+.team-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 55px rgba(16, 32, 51, 0.12);
+  border-color: rgba(63, 111, 166, 0.25);
 }
 
 .kicker {
@@ -307,12 +349,12 @@ p {
 }
 
 .team-bubble-wrap {
-  width: 132px;
-  height: 132px;
+  width: 118px;
+  height: 118px;
   border-radius: 999px;
   overflow: hidden;
-  border: 4px solid var(--surface-soft);
-  box-shadow: 0 10px 24px rgba(16, 32, 51, 0.12);
+  border: 4px solid rgba(255,255,255,0.9);
+  box-shadow: 0 14px 30px rgba(16, 32, 51, 0.14);
   background: var(--surface-soft);
 }
 
@@ -343,9 +385,10 @@ p {
 
 .research-graphic-wrap {
   overflow: hidden;
-  border-radius: calc(var(--radius) - 4px);
-  background: var(--surface-soft);
+  border-radius: calc(var(--radius) - 2px);
+  background: linear-gradient(180deg, #f8fbff 0%, var(--surface-soft) 100%);
   border: 1px solid var(--line);
+  box-shadow: 0 24px 50px rgba(16, 32, 51, 0.12);
 }
 
 .research-graphic {
@@ -400,14 +443,21 @@ p {
 }
 
 .button {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
   color: white;
+  box-shadow: 0 14px 28px rgba(33, 76, 122, 0.22);
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
 }
 
 .button-secondary {
-  background: var(--surface-soft);
+  background: rgba(255, 255, 255, 0.84);
   color: var(--accent);
   border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
 }
 
 .funding-logo-row {
@@ -466,10 +516,14 @@ p {
 
 @media (max-width: 640px) {
   section {
-    padding: 3.5rem 0;
+    padding: 4rem 0;
   }
 
   .site-nav {
     gap: 0.7rem 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2.3rem, 11vw, 3.2rem);
   }
 }

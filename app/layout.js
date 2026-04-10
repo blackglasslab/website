@@ -1,5 +1,9 @@
 import './globals.css';
 import Link from 'next/link';
+import { Inter, Manrope } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-display' });
 
 const navigation = [
   { href: '/', label: 'Home' },
@@ -18,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <body>
         <div className="site-shell">
           <header className="site-header">
