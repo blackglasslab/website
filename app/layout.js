@@ -5,6 +5,7 @@ const navigation = [
   { href: '/', label: 'Home' },
   { href: '/research', label: 'Research' },
   { href: '/publications', label: 'Publications' },
+  { href: '/tools', label: 'Tools' },
   { href: '/team', label: 'Team' },
   { href: '/join', label: 'Join' },
   { href: '/contact', label: 'Contact' },
