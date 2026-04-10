@@ -110,11 +110,11 @@ a {
 }
 
 section {
-  padding: 5.5rem 0;
+  padding: 4.6rem 0;
 }
 
 .hero {
-  padding-top: 5.75rem;
+  padding-top: 5rem;
 }
 
 .hero-card,
@@ -131,12 +131,18 @@ section {
 }
 
 .hero-card {
-  padding: 3.4rem;
+  padding: 2.7rem;
   display: grid;
-  grid-template-columns: 1.5fr 0.85fr;
-  gap: 2.4rem;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 2rem;
   position: relative;
   overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.96) 0%, rgba(248,251,255,0.92) 52%, rgba(225,236,248,0.84) 100%),
+    url('/hero-micrograph.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: screen, normal;
 }
 
 .hero-card::before {
@@ -144,8 +150,8 @@ section {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 82% 16%, rgba(52, 95, 145, 0.22), transparent 24%),
-    linear-gradient(135deg, rgba(23, 56, 93, 0.03) 0%, transparent 48%);
+    linear-gradient(90deg, rgba(247,251,255,0.97) 0%, rgba(247,251,255,0.93) 40%, rgba(247,251,255,0.7) 62%, rgba(247,251,255,0.24) 100%),
+    radial-gradient(circle at 82% 16%, rgba(52, 95, 145, 0.18), transparent 24%);
   pointer-events: none;
 }
 
@@ -154,7 +160,7 @@ section {
   position: absolute;
   inset: auto -10% -35% 42%;
   height: 220px;
-  background: radial-gradient(circle, rgba(23, 56, 93, 0.1) 0%, transparent 62%);
+  background: radial-gradient(circle, rgba(23, 56, 93, 0.12) 0%, transparent 62%);
   pointer-events: none;
 }
 
@@ -185,28 +191,28 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 6vw, 4.9rem);
-  line-height: 0.98;
-  margin-bottom: 1.35rem;
+  font-size: clamp(2.1rem, 5vw, 4.15rem);
+  line-height: 1.01;
+  margin-bottom: 1.15rem;
   color: var(--ink);
 }
 
 h2 {
-  font-size: clamp(1.9rem, 4vw, 2.9rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1.7rem, 3.5vw, 2.45rem);
+  margin-bottom: 0.85rem;
   color: var(--ink);
 }
 
 p {
   color: var(--muted);
-  line-height: 1.75;
+  line-height: 1.72;
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 0.98rem;
 }
 
 .lead {
-  font-size: 1.1rem;
-  max-width: 62ch;
+  font-size: 1.02rem;
+  max-width: 60ch;
 }
 
 .hero-stats {
@@ -234,7 +240,7 @@ p {
 
 .section-header {
   max-width: 56rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .research-grid,
@@ -306,7 +312,7 @@ p {
 .position-card,
 .team-card,
 .panel {
-  padding: 1.65rem;
+  padding: 1.35rem;
 }
 
 .panel,
@@ -367,8 +373,8 @@ p {
 }
 
 .team-bubble-wrap {
-  width: 118px;
-  height: 118px;
+  width: 104px;
+  height: 104px;
   border-radius: 999px;
   overflow: hidden;
   border: 4px solid rgba(255,255,255,0.9);
@@ -534,7 +540,7 @@ p {
 
 @media (max-width: 640px) {
   section {
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .site-nav {
@@ -542,6 +548,11 @@ p {
   }
 
   h1 {
-    font-size: clamp(2.3rem, 11vw, 3.2rem);
+    font-size: clamp(2rem, 10vw, 2.9rem);
+  }
+
+  .hero-card {
+    padding: 2rem;
+    background-position: 66% center;
   }
 }
