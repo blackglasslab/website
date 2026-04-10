@@ -17,6 +17,16 @@ const teamMembers = [
     image: '/team/maureen-bischof.jpg',
     bio: 'Maureen Bischof is a Research Associate in the Bader Lab and contributes to the lab’s work in infection biology and disease-relevant experimental systems.',
   },
+  {
+    name: 'Post-doctoral researcher',
+    role: 'Starting summer 2026',
+    bio: 'Joining the lab to work at the intersection of neurobiology, AI/ML, and long-term consequences of infection.',
+  },
+  {
+    name: 'PhD student',
+    role: 'Starting summer 2026',
+    bio: 'Joining the lab to study cell death and inflammation in long-term infection.',
+  },
 ];
 
 export default function TeamPage() {
@@ -32,16 +42,20 @@ export default function TeamPage() {
         </div>
         <div className="team-layout team-layout-photos">
           {teamMembers.map((member) => (
-            <article className="team-card team-card-photo" key={member.name}>
-              <div className="team-photo-wrap">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={520}
-                  height={640}
-                  className="team-photo"
-                />
-              </div>
+            <article className={`team-card ${member.image ? 'team-card-bubble' : 'team-card-coming-soon'}`} key={member.name}>
+              {member.image ? (
+                <div className="team-bubble-row">
+                  <div className="team-bubble-wrap">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={220}
+                      height={220}
+                      className="team-bubble"
+                    />
+                  </div>
+                </div>
+              ) : null}
               <p className="kicker">{member.role}</p>
               <h3>{member.name}</h3>
               <p>{member.bio}</p>
