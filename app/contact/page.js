@@ -25,11 +25,9 @@ export default function ContactPage() {
             <p>69120 Heidelberg, Germany</p>
             <p>
               Email:{' '}
-              <a href="mailto:stefanie.bader@uni-heidelberg.de">stefanie.bader@uni-heidelberg.de</a>
-            </p>
-            <p>
-              Lab email:{' '}
               <a href="mailto:stefanie@baderlab.de">stefanie@baderlab.de</a>
+              {' '}|{' '}
+              <a href="mailto:stefanie.bader@uni-heidelberg.de">stefanie.bader@uni-heidelberg.de</a>
             </p>
           </article>
           <article className="contact-card">
