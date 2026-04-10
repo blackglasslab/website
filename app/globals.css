@@ -313,6 +313,36 @@ p {
   display: block;
 }
 
+.research-hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.research-graphic-wrap {
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+}
+
+.research-graphic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.research-graphic-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.research-graphic-copy strong {
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
 .inline-list {
   display: grid;
   gap: 0.85rem;
@@ -397,7 +427,8 @@ p {
   .research-grid,
   .card-grid,
   .publications-grid,
-  .publication-list-item {
+  .publication-list-item,
+  .research-hero-panel {
     grid-template-columns: 1fr;
   }
 
