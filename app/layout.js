@@ -17,7 +17,7 @@ const navigation = [
 
 export const metadata = {
   title: 'Bader Lab',
-  description: 'Research on infection, innate immunity, and long-term disease.',
+  description: 'Research on infection, innate immunity, and post-viral disease.',
 };
 
 export default function RootLayout({ children }) {
