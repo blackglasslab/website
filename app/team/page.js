@@ -9,23 +9,25 @@ const teamMembers = [
     name: 'Stefanie Bader',
     role: 'Group leader',
     image: '/team/stefanie-bader.jpg',
-    bio: 'Stefanie Bader leads the lab’s work on host responses to infection, inflammatory signalling, and the mechanisms linking acute insults to persistent disease.',
+    bio: 'Stefanie Bader leads the lab’s research on how viral infections rewire host signalling, drive sustained inflammation, and contribute to post-viral pathology.',
+    imagePosition: '50% 32%',
   },
   {
     name: 'Maureen Bischof',
     role: 'Research Associate',
     image: '/team/maureen-bischof.jpg',
-    bio: 'Maureen Bischof is a Research Associate in the Bader Lab and contributes to the lab’s work in infection biology and disease-relevant experimental systems.',
+    bio: 'Maureen Bischof contributes to the lab’s work in infection biology, experimental systems, and the practical generation of robust disease-relevant data.',
+    imagePosition: '50% 24%',
   },
   {
     name: 'Post-doctoral researcher',
     role: 'Starting summer 2026',
-    bio: 'Joining the lab to work at the intersection of neurobiology, AI/ML, and long-term consequences of infection.',
+    bio: 'Joining the lab to work at the intersection of neurobiology, AI/ML, and post-viral disease mechanisms.',
   },
   {
     name: 'PhD student',
     role: 'Starting summer 2026',
-    bio: 'Joining the lab to study cell death and inflammation in long-term infection.',
+    bio: 'Joining the lab to study cell death and inflammatory pathways in post-infectious disease.',
   },
 ];
 
@@ -37,7 +39,7 @@ export default function TeamPage() {
           <p className="kicker">Team</p>
           <h2>People</h2>
           <p>
-            The Bader Lab is building a focused research environment around infection biology, innate immunity, and long-term disease mechanisms.
+            The Bader Lab is building a focused research environment around infection biology, innate immunity, and post-viral disease mechanisms.
           </p>
         </div>
         <div className="team-layout team-layout-photos">
@@ -52,6 +54,7 @@ export default function TeamPage() {
                       width={220}
                       height={220}
                       className="team-bubble"
+                      style={{ objectPosition: member.imagePosition || '50% 50%' }}
                     />
                   </div>
                 </div>
@@ -61,12 +64,6 @@ export default function TeamPage() {
               <p>{member.bio}</p>
             </article>
           ))}
-          <article className="panel">
-            <strong>Current focus</strong>
-            <p>
-              The team is developing a research program at the intersection of infection, tissue biology, and innate immune mechanisms with translational relevance.
-            </p>
-          </article>
         </div>
       </div>
     </section>

@@ -8,15 +8,15 @@ export const metadata = {
 const howWeWork = [
   {
     title: 'Mechanistic biology',
-    text: 'Focused experimental work on pathways linking infection, inflammation, and tissue dysfunction.',
+    text: 'We dissect how viral infections reshape host signalling networks, inflammatory programs, and tissue states over time.',
   },
   {
-    title: 'Disease relevance',
-    text: 'Questions are anchored in clinically meaningful problems, especially where acute infection drives longer-term consequences.',
+    title: 'Multidisciplinary platforms',
+    text: 'The lab combines infection biology with advanced imaging, multi-omics profiling, and RNA-based therapeutic delivery approaches.',
   },
   {
-    title: 'Collaborative science',
-    text: 'The lab sits at the interface of infection biology, immunology, and translational disease research.',
+    title: 'Translational focus',
+    text: 'We aim to connect mechanistic insight to diagnostic markers, intervention strategies, and precision therapies for post-viral disease.',
   },
 ];
 
@@ -29,7 +29,7 @@ export default function ResearchPage() {
             <p className="kicker">Research</p>
             <h2>Understanding how infection shapes disease</h2>
             <p>
-              The lab investigates how innate immune pathways influence tissue injury, inflammatory decision-making, and longer-term disease outcomes after infection.
+              Our research focuses on how viral infections alter host signalling networks and immune responses, driving sustained inflammation and post-viral pathology.
             </p>
           </div>
 
@@ -44,9 +44,12 @@ export default function ResearchPage() {
               />
             </div>
             <div className="research-graphic-copy">
-              <strong>From mechanisms to intervention</strong>
+              <strong>From viral injury to post-viral disease</strong>
               <p>
-                We aim to understand how infection drives persistent inflammatory and tissue-level changes, and to use that mechanistic insight to identify tractable paths toward treatment.
+                We study how acute infection is converted into a chronic, multi-organ inflammatory state — and how those mechanisms might be interrupted.
+              </p>
+              <p>
+                A major focus is long COVID and related post-infectious syndromes, where persistent fatigue, cognitive impairment, and organ dysfunction point to biology that is still poorly understood and urgently in need of tractable interventions.
               </p>
             </div>
           </div>
@@ -59,7 +62,7 @@ export default function ResearchPage() {
             <p className="kicker">Research themes</p>
             <h2>Core questions shaping the lab’s work</h2>
             <p>
-              The lab is interested in how infection leaves a biological imprint — in tissues, in inflammatory networks, and in disease trajectories that persist beyond the acute phase.
+              We aim to uncover the molecular and cellular mechanisms that underlie post-viral syndromes, linking fundamental biology with clinically meaningful disease trajectories.
             </p>
           </div>
           <div className="research-grid">
@@ -77,7 +80,10 @@ export default function ResearchPage() {
         <div className="container">
           <div className="section-header">
             <p className="kicker">How we work</p>
-            <h2>Focused, mechanism-driven, and clinically aware</h2>
+            <h2>Focused, multidisciplinary, and translational</h2>
+            <p>
+              To address the complexity of post-viral disease, we bridge virology, immunology, and translational medicine with experimental platforms designed to reveal mechanism and test intervention.
+            </p>
           </div>
           <div className="card-grid">
             {howWeWork.map((item) => (

@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
                   Created with <a href="https://openclaw.ai" target="_blank" rel="noreferrer">OpenClaw</a>
                 </p>
                 <p>
-                  Onyx is the lab’s AI chief of staff, systems builder, and steady machine familiar — helping turn ideas into structure, tools, and momentum.
+                  Onyx is the lab’s AI-brain and systems builder, working behind the scenes to turn ideas into infrastructure.
                 </p>
               </div>
             </div>
