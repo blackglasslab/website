@@ -34,6 +34,19 @@ body {
   color: var(--text);
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.06;
+  background-image: url('/hero-micrograph.jpg');
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -138,7 +151,7 @@ section {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.96) 0%, rgba(248,251,255,0.92) 52%, rgba(225,236,248,0.84) 100%),
+    linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(244,248,253,0.89) 48%, rgba(214,227,241,0.78) 100%),
     url('/hero-micrograph.jpg');
   background-size: cover;
   background-position: center center;
@@ -150,8 +163,8 @@ section {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(247,251,255,0.97) 0%, rgba(247,251,255,0.93) 40%, rgba(247,251,255,0.7) 62%, rgba(247,251,255,0.24) 100%),
-    radial-gradient(circle at 82% 16%, rgba(52, 95, 145, 0.18), transparent 24%);
+    linear-gradient(90deg, rgba(247,251,255,0.985) 0%, rgba(247,251,255,0.95) 38%, rgba(247,251,255,0.66) 62%, rgba(247,251,255,0.16) 100%),
+    radial-gradient(circle at 82% 16%, rgba(23, 56, 93, 0.24), transparent 24%);
   pointer-events: none;
 }
 
@@ -393,6 +406,10 @@ p {
   background: linear-gradient(180deg, var(--surface) 0%, var(--surface-soft) 100%);
 }
 
+.team-layout-photos .team-card-bubble:nth-child(odd) {
+  background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(229,237,246,0.92) 100%);
+}
+
 .team-card-coming-soon h3::after {
   content: ' · coming soon';
   color: var(--muted);
@@ -413,6 +430,30 @@ p {
   background: linear-gradient(180deg, #f8fbff 0%, var(--surface-soft) 100%);
   border: 1px solid rgba(23, 56, 93, 0.08);
   box-shadow: 0 28px 60px rgba(10, 20, 36, 0.16);
+}
+
+.research-hero-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.research-hero-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(240,246,252,0.82) 100%),
+    url('/hero-micrograph.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-blend-mode: screen, normal;
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.research-hero-panel > * {
+  position: relative;
+  z-index: 1;
 }
 
 .research-graphic {
